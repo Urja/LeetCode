@@ -12,8 +12,8 @@ public class SpiralOrderTest {
     public void test1() {
         List<List<Integer>> input = new ArrayList<>();
         input.add(Arrays.asList(1,2 ,3));
-        List<Integer> ezpected = Arrays.asList(1, 2, 3);
-        Assert.assertEquals(ezpected, spiralOrder(input));
+        List<Integer> expected = Arrays.asList(1, 2, 3);
+        Assert.assertEquals(expected, spiralOrder(input));
     }
 
     @org.junit.Test
@@ -22,8 +22,8 @@ public class SpiralOrderTest {
         input.add(Arrays.asList(1, 2, 3));
         input.add(Arrays.asList(4, 5, 6));
         input.add(Arrays.asList(7, 8, 9));
-        List<Integer> ezpected = Arrays.asList(1, 2, 3, 6, 9, 8, 7, 4, 5);
-        Assert.assertEquals(ezpected, spiralOrder(input));
+        List<Integer> expected = Arrays.asList(1, 2, 3, 6, 9, 8, 7, 4, 5);
+        Assert.assertEquals(expected, spiralOrder(input));
     }
 
     @org.junit.Test
@@ -31,8 +31,8 @@ public class SpiralOrderTest {
         List<List<Integer>> input = new ArrayList<>();
         input.add(Arrays.asList(1, 2, 3));
         input.add(Arrays.asList(4, 5, 6));
-        List<Integer> ezpected = Arrays.asList(1, 2, 3, 6, 5, 4);
-        Assert.assertEquals(ezpected, spiralOrder(input));
+        List<Integer> expected = Arrays.asList(1, 2, 3, 6, 5, 4);
+        Assert.assertEquals(expected, spiralOrder(input));
     }
 
     @org.junit.Test
@@ -41,8 +41,8 @@ public class SpiralOrderTest {
         input.add(Arrays.asList(1, 2));
         input.add(Arrays.asList(4, 5));
         input.add(Arrays.asList(7, 8));
-        List<Integer> ezpected = Arrays.asList(1, 2, 5, 8, 7, 4);
-        Assert.assertEquals(ezpected, spiralOrder(input));
+        List<Integer> expected = Arrays.asList(1, 2, 5, 8, 7, 4);
+        Assert.assertEquals(expected, spiralOrder(input));
     }
 
     @org.junit.Test
@@ -51,8 +51,8 @@ public class SpiralOrderTest {
         input.add(Arrays.asList(1));
         input.add(Arrays.asList(4));
         input.add(Arrays.asList(7));
-        List<Integer> ezpected = Arrays.asList(1, 4, 7);
-        Assert.assertEquals(ezpected, spiralOrder(input));
+        List<Integer> expected = Arrays.asList(1, 4, 7);
+        Assert.assertEquals(expected, spiralOrder(input));
     }
 
     public static ArrayList<Integer> spiralOrder(final List<List<Integer>> A) {
